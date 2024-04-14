@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #000000;
+  font-family: Replica, Roboto, Arial, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  overflow: hidden;
+}
+#page1 {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+}
+#page1 > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.svg-container {
+  position: absolute;
+  top: 1rem;
+  left: 47.5%;
+  right: 52.5%;
+  z-index: 50;
+}
+.logo {
+  height: 82px;
+  width: 80px;
+  fill: white;
+}
+.content {
+  position: absolute;
+  bottom: 60px; /* Adjust as needed */
+  left: 60px; /* Adjust as needed */
+  z-index: 50;
+}
+
+.content h1 {
+  font-weight: 600;
+  font-size: 110px;
+  color: rgb(255, 255, 255);
+  margin-top: 20px; /* Adjust as needed */
+}
+.text-colour {
+  color: #aff005;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 36px 0;
+  background: #aff005;
+  position: relative;
+  font-size: 4rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 5s slide linear infinite;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+.sliding svg {
+  height: auto;
+  width: 1em;
+}

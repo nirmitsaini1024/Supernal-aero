@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 0.3fr);
+  gap: 20px;
+  width: 95vw;
+  margin: auto;
+}
+.card {
+  background-color: #fff;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  width: 400px;
+}
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  min-height: 250px;
+}
+.card-body button{
+    border: none;
+    background-color: #ffffff;
+    font-size: 18px;
+}
+.card-body i {
+    color: black;
+}
+/* .tag {
+  background-color: #ccc;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  padding: 2px 10px;
+  text-transform: uppercase;
+} */
+/* .tag-teal {
+  background-color: #92d4e4;
+}
+.tag-purple {
+  background-color: #3d1d94;
+}
+.tag-pink {
+  background-color: #c62bcd;
+} */
+.card-body h4 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.user {
+  display: flex;
+  margin-top: auto;
+}
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+.user-info h5 {
+  margin: 0;
+}
+.user-info small {
+  color: #888785;
+}
+@media (max-width: 940px) {
+  .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
