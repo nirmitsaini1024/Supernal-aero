@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+body {
+  margin: 0;
+  background: #000000;
+  overflow-x: hidden;
+}
+
+.races {
+  width: fit-content;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+}
+
+.races h2 {
+  font-family: "Staatliches", cursive;
+  font-size: 20vw;
+  flex-shrink: 0;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+  color: #e10600;
+
+  margin: 0;
+}
+.races h1 i{
+   
+    color: #aff005;
+}
+.races h1{
+    margin: 0 8rem 0 4rem;
+    font-size: 6rem;    
+    color: #ffffff;
+    font-weight: 600;
+    white-space: nowrap;
+
+}
+.lightBG {
+  background: #ffffff;
+}
+
+.space-20vh {
+  height: 20vh;
+}
+
+.space-30vh {
+  height: 30vh;
+}
+
+.space-50vh {
+  height: 50vh;
+}
+
+.space-100vh {
+  height: 100vh;
+}
+.races img {
+  max-width: 10%; /* Set the maximum width of the image relative to its container */
+  height: 60vh; /* Allows the image's height to adjust proportionally to its width */
+  object-fit: cover;
+  display: block; /* Ensures the image is displayed as a block element */
+  margin: 0 3rem; /* Centers the image horizontally within its container */
+}
+.races .title-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.races .title-wrapper h1 {
+    margin: 0 8rem 0 4rem;
+    font-size: 6rem;
+    color: #ffffff;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.races .svg-icon {
+    width: 120px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    fill: #aff005; /* Adjust fill color */
+    margin-right: -40px; /* Adjust spacing between the icon and the text */
+    transform: rotate(90deg);
+}
+.section2-content h3{
+    white-space: nowrap;
+    font-size: 2rem;
+}

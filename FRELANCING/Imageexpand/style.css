@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Goblin+One&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Goblin One", cursive;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  padding: 0 10vw;
+}
+
+.image {
+  background-color: #ffffff;
+  line-height: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tagline {
+  position: absolute;
+  padding-bottom: 16px;
+  color: white;
+  font-size: 48px;
+  opacity: 0;
+}
+.image > div {
+  width: 100%;
+}
+.image img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#grow-tagline {
+  transform: translateY(60px);
+}
+
+#grow {
+  transform: scale(0.8);
+}
+
+#shrink {
+  transform: scale(1);
+}
+
+#shrink-tagline {
+  transform: translateY(80px);
+}
